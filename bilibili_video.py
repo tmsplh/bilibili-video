@@ -36,7 +36,7 @@ def spider(url):
     for each in content:
         title = each.xpath('//div[@class="v-title"]/h1/@title')
         if title:
-            av = url.replace("http://bilibili.com/video/av", "")
+            av = url.replace("https://www.bilibili.com/video/BV14ZS4YXEjc/?spm_id_from=333.1007.tianma.1-1-1.click&vd_source=2b7bd02e2bd943fc59b098422392da31", "")
             title = title[0]
             tminfo1_log = each.xpath('//div[@class="tminfo"]/a/text()')
             tminfo2_log = each.xpath('//div[@class="tminfo"]/span[1]/a/text()')
